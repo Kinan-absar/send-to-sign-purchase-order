@@ -25,6 +25,8 @@
     "website": "https://absar-alomran.com",
     "category": "Purchases",
     "license": "OPL-1",
+    "price": 14.99,
+    "currency": "USD",
     "depends": ["purchase", "sign", "mail"],
     "data": [
         "data/cron.xml",
