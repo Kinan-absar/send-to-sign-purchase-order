@@ -27,7 +27,7 @@
     "license": "OPL-1",
     "price": 14.99,
     "currency": "USD",
-    "depends": ["purchase", "sign", "mail"],
+    "depends": ["purchase", "sign", "mail", "project"],
     "data": [
         "data/cron.xml",
         "views/purchase_order_view.xml",
