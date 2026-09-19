@@ -24,9 +24,9 @@
     "author": "Kinan",
     "website": "https://absar-alomran.com",
     "category": "Purchases",
-    "license": "OPL-1",
-    "price": 14.99,
-    "currency": "USD",
+    "license": 'OPL-1',
+    "price": 9.99,
+    "currency": 'USD',
     "depends": ["purchase", "sign", "mail", "project"],
     "data": [
         "data/cron.xml",
