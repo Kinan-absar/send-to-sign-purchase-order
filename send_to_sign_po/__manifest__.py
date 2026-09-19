@@ -1,40 +1,17 @@
 {
-    "name": "Send to Sign for Purchase Orders",
-    "version": "1.0.0",
-    "summary": "Digital signing workflow for purchase orders using Odoo Sign.",
-    "description": """
-        Digital Signing Workflow for Purchase Orders
-        --------------------------------------------
-
-        This module enhances the Purchase Order workflow by integrating Odoo Sign
-        and adding automated revision/version control.
-
-        Key Features:
-        • Adds a “Send to Sign” button for confirmed Purchase Orders.
-        • Generates a printable PO PDF and sends it to Odoo Sign for digital signatures.
-        • Automatically tracks signature progress and updates PO signature state.
-        • Displays signature status inside the form view and list view.
-        • Implements full revision control (R-1, R-2, …) for signed POs.
-        • Automatically resets signature state and increments revision when PO data changes.
-        • Shows revision number directly in the PO PDF.
-        • Prevents repeated signing unless changes are made after the last completed signature.
-
-        This provides a clean, controlled, and auditable digital approval process for purchasing.
-    """,
-    "author": "Kinan",
-    "website": "https://absar-alomran.com",
-    "category": "Purchases",
-    "license": 'OPL-1',
-    "price": 9.99,
-    "currency": 'USD',
-    "depends": ["purchase", "sign", "mail", "project"],
-    "data": [
-        "data/cron.xml",
-        "views/purchase_order_view.xml",
-        "views/res_company_view.xml",
-        "views/report_purchaseorder_inherit.xml",
-    ],
-    "images": ["images/main_screenshot.png"],
-    "installable": True,
-    "application": False,
+    'name': 'Send to Sign for Purchase Orders',
+    'version': '1.0.0',
+    'summary': 'Digital signing workflow for purchase orders using Odoo Sign.',
+    'description': '\n        Digital Signing Workflow for Purchase Orders\n        --------------------------------------------\n\n        This module enhances the Purchase Order workflow by integrating Odoo Sign\n        and adding automated revision/version control.\n\n        Key Features:\n        • Adds a “Send to Sign” button for confirmed Purchase Orders.\n        • Generates a printable PO PDF and sends it to Odoo Sign for digital signatures.\n        • Automatically tracks signature progress and updates PO signature state.\n        • Displays signature status inside the form view and list view.\n        • Implements full revision control (R-1, R-2, …) for signed POs.\n        • Automatically resets signature state and increments revision when PO data changes.\n        • Shows revision number directly in the PO PDF.\n        • Prevents repeated signing unless changes are made after the last completed signature.\n\n        This provides a clean, controlled, and auditable digital approval process for purchasing.\n    ',
+    'author': 'Kinan',
+    'website': 'https://absar-alomran.com',
+    'category': 'Purchases',
+    'license': 'OPL-1',
+    'price': 9.99,
+    'currency': 'USD',
+    'depends': ['purchase', 'sign', 'mail', 'project'],
+    'data': ['data/cron.xml', 'views/purchase_order_view.xml', 'views/res_company_view.xml', 'views/report_purchaseorder_inherit.xml'],
+    'images': ['images/main_screenshot.png'],
+    'installable': True,
+    'application': False,
 }
