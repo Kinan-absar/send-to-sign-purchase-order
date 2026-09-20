@@ -1,52 +1,65 @@
-<section style="max-width:1200px;margin:auto;font-family:Arial, sans-serif;">
+<section class="container py-4">
+  <div class="text-center my-4">
+    <img class="img-fluid border rounded" src="images/main_screenshot.png" alt="Main screenshot">
+  </div>
 
-  <h1>Send to Sign Purchase Orders</h1>
-
-  <p style="font-size:16px;">
-    Professional Send-to-Sign workflow for Purchase Orders in Odoo.
-    Automatically control when Purchase Orders are sent for signature
-    and track revisions clearly.
-  </p>
-
-  <hr/>
-
-  <h2>How It Works</h2>
-  <ul>
-    <li>The <strong>Send to Sign</strong> button appears only after Purchase Order approval.</li>
-    <li>Once sent for signature, the button automatically disappears.</li>
-    <li>If any change occurs (price, quantity, line added/removed), the button reappears.</li>
-    <li>A new <strong>revision number</strong> is generated and displayed on the Purchase Order.</li>
-    <li>The updated Purchase Order will trigger the button to appear again automatically.</li>
-  </ul>
-
-  <hr/>
-
-  <h2>Key Features</h2>
-  <ul>
-    <li>Approval-based Send to Sign button</li>
-    <li>Automatic revision tracking</li>
-    <li>Signature state visibility</li>
-    <li>Prevents signing outdated Purchase Orders</li>
-    <li>Fully integrated with Odoo Sign</li>
-    <li>Odoo 18 compatible</li>
-  </ul>
-
-  <hr/>
-
-  <h2>Screenshots</h2>
-
-  <h3>Send to Sign Button</h3>
-  <img src="send-to-sign button.png"
-       style="width:100%;margin-bottom:24px;border-radius:6px;"/>
-
-  <h3>Signature State & Revision Tracking</h3>
-  <img src="signature state.png"
-       style="width:100%;margin-bottom:24px;border-radius:6px;"/>
-
-  <hr/>
-
-  <p style="font-size:14px;color:#666;">
-    Developed by <strong>Kinan</strong> Commercial License
-  </p>
-
+  <div class="text-center bg-light border rounded p-5 mb-5">
+    <h1 class="font-weight-bold mb-3" style="color:#3b2943;">Send to Sign for Purchase Orders</h1>
+    <p class="lead text-muted mx-auto mb-4">Add a controlled Odoo Sign workflow to Purchase Orders with signature-state tracking and automatic revision management.</p>
+    <div>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Purchase</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Odoo Sign</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Revision Control</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Audit Trail</span>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h2 class="text-center font-weight-bold mb-3" style="color:#3b2943;">Controlled PO Signature Workflow</h2>
+    <p class="text-center text-muted mb-4">Send approved Purchase Orders to Odoo Sign, track the signing lifecycle, and automatically reopen the signing process when commercial content changes.</p>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Send to Sign Action</h3>
+          <p class="text-muted mb-0">Adds a dedicated action on eligible confirmed/approved Purchase Orders to generate the PO document and start the signature process.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Signature State</h3>
+          <p class="text-muted mb-0">Track whether the PO is awaiting signatures, completed, rejected or otherwise moving through the configured signature workflow.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Revision Control</h3>
+          <p class="text-muted mb-0">Maintain R-number revisions for Purchase Orders so updated commercial documents can be distinguished from previously signed versions.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Change Detection</h3>
+          <p class="text-muted mb-0">When relevant PO data changes after signing, the module resets the signature readiness and increments the revision so the updated document can be signed again.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">PO PDF Revision</h3>
+          <p class="text-muted mb-0">The Purchase Order report is extended so the document carries its revision information.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Scheduled Status Updates</h3>
+          <p class="text-muted mb-0">Included scheduled processing helps synchronize signature progress back to the Purchase Order.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-4">
+      <img class="img-fluid border rounded" src="send-to-sign button.png" alt="Send to Sign button">
+    </div>
+    <div class="text-center my-4">
+      <img class="img-fluid border rounded" src="signature state.png" alt="Signature state and revision">
+    </div>
+  </div>
+  <div class="text-center text-muted border-top pt-4 mt-5">Odoo 19 • Requires Odoo Sign • Commercial OPL-1 License • Developed by Kinan</div>
 </section>

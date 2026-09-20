@@ -1,6 +1,6 @@
 {
     "name": "Send to Sign for Purchase Orders",
-    "version": "1.0.0",
+    "version": "19.0.1.0.0",
     "summary": "Digital signing workflow for purchase orders using Odoo Sign.",
     "description": """
         Digital Signing Workflow for Purchase Orders
@@ -24,9 +24,9 @@
     "author": "Kinan",
     "website": "https://absar-alomran.com",
     "category": "Purchases",
-    "license": "OPL-1",
-    "price": 14.99,
-    "currency": "USD",
+    "license": 'OPL-1',
+    "price": 9.99,
+    "currency": 'USD',
     "depends": ["purchase", "sign", "mail", "project"],
     "data": [
         "data/cron.xml",
@@ -34,7 +34,7 @@
         "views/res_company_view.xml",
         "views/report_purchaseorder_inherit.xml",
     ],
-    "images": ["images/main_screenshot.png"],
+    "images": ['images/main_screenshot.png'],
     "installable": True,
     "application": False,
 }
